@@ -1,0 +1,17 @@
+actions = alg stream insert store algorithmStop quit
+
+alg = algorithmStart
+alg.param.1 = messif.algorithms.impl.SequentialScan
+
+stream = objectStreamOpen
+stream.param.1 = images-collection.data
+stream.param.2 = images.ImagesMetaObject
+stream.param.3 = data
+
+insert = operationExecute
+insert.param.1 = messif.operations.data.InsertOperation
+insert.param.2 = data
+insert.repeat = 3858
+
+store = algorithmStore
+store.param.1 = images-collection.ser

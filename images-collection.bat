@@ -1,0 +1,1 @@
+java -classpath C:\Users\David\Documents\SimilaritySearch-Web\MESSIF.jar;C:\Users\David\Documents\SimilaritySearch-Web\build\web\WEB-INF\classes\ messif.utility.CoreApplication images-collection.cf
