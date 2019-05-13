@@ -10,7 +10,10 @@
     </head>
     <body>
         <c:forEach items="${search.results}" var="result">
-            Result for: ${result}<br/>
+            <c:forEach items="${result.answer}" var="item">
+                <img src="data/${item.object.locatorURI}" style="max-height: 50px"/>
+            </c:forEach>
+            <hr/>
         </c:forEach>
     </body>
 </html>

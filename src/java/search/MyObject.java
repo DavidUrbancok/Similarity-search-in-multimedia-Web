@@ -40,8 +40,8 @@ public class MyObject extends MetaObjectMap {
     protected float getDistanceImpl(LocalAbstractObject obj, float[] metaDistances, float distThreshold) {
         MyObject o = (MyObject)obj;
         
-        float dist1 = this.getObject("ColorStructureType").getDistance(o.getObject("ScalableColorType"));
-        float dist2 = this.getObject("ScalableColorType").getDistance(o.getObject("ColorStructureType"));
+        float dist1 = this.getObject("ColorStructureType").getDistance(o.getObject("ColorStructureType"));
+        float dist2 = this.getObject("ScalableColorType").getDistance(o.getObject("ScalableColorType"));
         
         return dist1 + dist2;
     }
