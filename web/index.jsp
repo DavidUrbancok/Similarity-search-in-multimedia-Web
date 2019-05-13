@@ -11,7 +11,7 @@
     <body>
         <c:forEach items="${search.results}" var="result">
             <c:forEach items="${result.answer}" var="item">
-                <img src="data/${item.object.locatorURI}" style="max-height: 50px"/>
+                <img src="images/${item.object.locatorURI}" style="max-height: 50px"/>
             </c:forEach>
             <hr/>
         </c:forEach>
